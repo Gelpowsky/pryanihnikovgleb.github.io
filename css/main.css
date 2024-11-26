@@ -1,0 +1,231 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	width: 100vw;
+}
+
+div,p,input,button,form,span,a,ul,li {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+}
+
+/* p {
+	line-height: 1.65em;
+} */
+
+.img1 {
+	margin-top: 30px;
+	width: 150px;
+}
+
+.header {
+	background: rgb(148, 0, 226);
+	background: linear-gradient(90deg, rgba(148, 0, 226, 1) 0%, rgba(223, 0, 255, 1) 38%, rgba(255, 0, 240, 1) 100%);
+
+}
+
+.offer {
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.offer_h1 {
+	font-size: 2em;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.offer_span {
+	text-transform: uppercase;
+	font-style: bold;
+	font-size: 3em;
+	font-weight: 900;
+}
+
+.offer_p {
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+.button {
+	display: block;
+	align-items: normal;
+	width: 250px;
+	height: 60px;
+	background-color: rgb(255, 204, 0);
+	font-weight: bold;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.img2 {
+	width: 75%;
+	margin-left: 80px;
+}
+
+.second {
+	background-color: white;
+}
+
+.blocks {
+	font-family: 'Ubuntu', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+
+.blocks_img {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 15px;
+}
+
+.third_form{
+	background-color: rgb(125, 205, 255);
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.third_form_btn{
+	display: block;
+	cursor: pointer;
+	text-align: center;
+	background-color: rgb(203, 130, 255);
+}
+h5{
+	color:rgb(0, 0, 0);
+
+}
+
+.result{
+	background-color: none;
+}
+
+.strochka{
+
+	border-radius: 50%;
+	margin-bottom: 5px;
+}
+
+.pizza_input{
+	border-radius: 50%;
+	margin-bottom: 5px;
+	background-color: rgb(0, 76, 142);
+	color:rgb(255, 255, 255);
+	text-align: center;
+}
+
+.zhir{
+	font-weight: 500;
+	text-align: center;
+	padding: 2%;
+	color:rgb(255, 255, 255);
+}
+
+.forth_form {
+	background-color: rgb(215, 212, 212);
+}
+
+
+.forms_form {
+	margin: 0 auto;
+	display: flex;
+	width: 500px;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+.forms_btn {
+	display: block;
+	cursor: pointer;
+	margin-top: 20px;
+	margin: 0 auto;
+	background-color: rgb(203, 130, 255);
+}
+
+.forms_btn_p {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	color: white;
+	margin: 0;
+}
+
+.footer1 {
+	position: absolute;
+	width: 100%;
+	background-color: blueviolet;
+	animation-name: example;
+	animation-duration: 4s;
+}
+
+.footer_text {
+	display: block;
+	text-align: center;
+	margin-top: 30px;
+	color: white;
+}
+/*Анимация transition на кнопке в шапке*/
+.button:hover {
+	background: rgb(214, 124, 20);
+	box-shadow: 0 4px 10px rgb(184, 94, 94);
+	top: 3px;
+	color: rgb(255, 255, 255);
+	width: 300px;
+	height: 100px;
+	transition: all 2s ease-out 0s;	
+}
+/*Анимация с сайта Animate.css "flash" для картинки 
+"телефон" в шапке страницы*/
+.blocks_img:hover {
+	animation:flash 1s;
+}
+/*Анимация с сайта Animate.css "swing" для картинки 
+"Логотип" в шапке страницы*/
+.img2:hover {
+	animation: swing 2s;
+}
+
+/*Анимация keyFrames изменение фона*/
+  @keyframes example {
+	from {background-color: rgb(255, 0, 255);}
+	to {background-color: rgb(111, 0, 255);}
+  }
+
+/*Анимация keyFrames изменение фона*/
+  @keyframes changing_color {
+	from {background-color: rgb(215, 212, 212);}
+	to {background-color: blueviolet;}
+  }
+
+/*Используем Анимацию keyFrames для блока с формой*/
+  /* .forth_form:hover{
+	animation-name: changing_color;
+	animation-duration: 4s;
+  } */
+
+/*Используем Анимацию transition для текста 
+в шапке профиля "ЖЕЛАЕТЕ"*/
+  .offer_span:hover {
+	font-size: 5em;
+	transition-timing-function: ease-out;
+	transition-duration: 2s;
+  }

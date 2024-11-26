@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-items-center">
+                    <img src="img/logo.png" alt="logo" class="img1">
+                    <div class="offer py-5">
+                        <h1 class="offer_h1">
+                            С помощью нас вы сможете создать то, о чем
+                        </h1>
+                        <span class="offer_span">
+                            Желаете
+                        </span>
+                        <p class="offer_p">
+                            Наши фозможности + опыт позволяет Вам
+                            достичь огромного успеха. Мы верим в нас!
+                            И знаем это на все 100%. Вас не остановить!
+                        </p>
+                        <div class="button" target="_blank">Узнать больше...</div>
+                    </div>
+                </div>
+                <div class="col-md-6 align-items-center my-auto">
+                    <img src="img/header-img.png" alt="header_picture" class="img2">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="second">
+        <div class="container">
+            <h1 class="blocks_h1 text-center">
+                Что Вам необходимо?
+            </h1>
+            <div class="row align-items-center py-5">
+                <div class="col-md-4 text-center">
+                    <img class="blocks_img" src="img/f3.png" alt="pencil">
+                    <h3 class="blocks_blocks_h3">
+                        Первый блок
+                    </h3>
+                    <p class="blocks_blocks_p">
+                        Текст чтобы заполнить пространство и показать, что понял, принял, осознал!
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img class="blocks_img" src="img/f4.png" alt="ball">
+                    <h3 class="blocks_blocks_h3">
+                        Второй блок
+                    </h3>
+                    <p class="blocks_blocks_p">
+                        Текст чтобы заполнить пространство и показать, что понял, принял, осознал!
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img class="blocks_img" src="img/f5.png" alt="flag">
+                    <h3 class="blocks_blocks_h3">
+                        Третий блок
+                    </h3>
+                    <p class="blocks_blocks_p">
+                        Текст чтобы заполнить пространство и показать, что понял, принял, осознал!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="third_form">
+        <form id="form" action="#">
+            <div class="container">
+                <div class="row">
+                    <!--Форма для заказа пиццы-->
+                    <div class="col-md-8 pizza_head">
+                        <h5>Оформи заказ на доставку пиццы</h5>
+                        <h7>обязательно вписывай данные на английском!</h>
+                            <div class="row mb-3">
+                                <div class="col-md-4 pizza_input" id = "name_pizza">Имя: </div>
+                                <div class="col-md-4">
+                                    <input class="form-control" id="name1" type="text" onblur="check_name();"
+                                        required />
+                                </div>
+                                <div class="col-md-6">
+                                    <span id="name_Check"></span>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4 pizza_input" id = "surname_pizza">Фамилия:</div>
+                                <div class="col-md-4">
+                                    <input class="form-control" id="surname" type="text" onblur="check_surname();"
+                                        required />
+                                </div>
+                                <div class="col-md-6">
+                                    <span id="surname_Check"></span>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4 pizza_input" id = "phone_pizza">Номер телефона:</div>
+                                <div class="col-md-4">
+                                    <input class="form-control" id="phone" type="text" onblur="check_Phone();"
+                                        placeholder="начинаем с 9 без пробелов" required />
+                                </div>
+                                <div class="col-md-6">
+                                    <span id="phone_Check"></span>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4 pizza_input" id = "email_pizza">Дополнительный контакт:</div>
+                                <div class="col-md-4">
+                                    <input class="form-control" id="email" type="text" onblur="check_email();"
+                                        required />
+                                </div>
+                                <div class="col-md-6">
+                                    <span id="email_Check"></span>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4 pizza_input">Когда бы ты хотел получить заказ:</div>
+                                <div class="col-md-4">
+                                    <input class="form-control" id="date" type="date" required />
+                                    <input class="form-control" id="time" type="time" required />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4 pizza_input" id = "vkus_pizza">Какую пиццу хочешь?</div>
+                                <div class="col-md-4">
+                                    <select class="form-control" name="vkus" id="vkus" required>
+                                        <option>Острая</option>
+                                        <option>Любимая</option>
+                                        <option>Невкусная</option>
+                                        <option>Вкус детства</option>
+                                        <option>Мечта</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4 pizza_input" id="size_pizza">Размер пиццы(см):</div>
+                                <div class="col-md-4">
+                                    <input class="form-control" id="size" type="number" min=30 max=45
+                                        placeholder="30-45" onblur="check_Size_pizza();" required />
+                                </div>
+                                <div class="col-md-6">
+                                    <span id="size_Check"></span>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4 pizza_input" id = quantity_pizza>Количество Пицц:</div>
+                                <div class="col-md-4">
+                                    <input class="form-control" id="quantity" type="number" min="1" max="5"
+                                        onblur="check_quantity_pizza();" required />
+                                </div>
+                                <div class="col-md-6">
+                                    <span id="quantity_Check"></span>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4 pizza_input">Способ оплаты:</div>
+                                <div class="col-md-4">
+                                    <select class="form-control" name="paymethod" id="paymethod" required>
+                                        <option>СБП</option>
+                                        <option>Картой</option>
+                                        <option>PayPal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8 third_form_btn my-2 py-2">
+                                    <span class=forms_btn_p id="sendOrder" onclick="outputData();">Отправить</span>
+                                </div>
+                            </div>
+
+                    </div>
+                    <!--Конец формы-->
+
+                    <!--Отчет о заказе-->
+                    <div class="col-md-4" id="result">
+                        <div class="col-md-12">
+                            <h5>Отчет</h5>
+                            <span id="summary"></span>
+                        </div>
+                    </div>
+                    <!--Конец отчета-->
+                </div>
+            </div>
+        </form>
+    </section>
+    <section class="forth_form">
+        <div class="container">
+            <h2 class="forms_h2 text-center">
+                Форма заказа обратного звонка
+            </h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="#" method="post" class="forms_form py-2">
+                        <input class="forms_form_input" type="text" id="login" placeholder="Имя"
+                            onblur="forms_forth_login();" required>
+                        <span id="forms_forth_login_Check"></span>
+                        <input class="forms_form_input" type="text"  id="forth_email"
+                            placeholder="Введите свой Email" onblur="forms_forth_email();" required>
+                        <span id="forms_forth_email_Check"></span>
+                        <input class="forms_form_input" type="tel" id="forth_phone" placeholder="Телефон"
+                            onblur="forms_forth_phone();" required>
+                        <span id="forms_forth_phone_Check"></span>
+                        <input class="forms_form_input" type="text" name="free_text" id="free_text"
+                            placeholder="Какая тема Вас интересует?">
+                    </form>
+                    <button class="forms_btn my-3" type="submit">
+                        <p class="forms_btn_p">Отправь вопрос</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <footer class="footer1">
+        <div class="container">
+            <p class="footer_text">
+                © Все на этом сайте запрещено
+            </p>
+        </div>
+    </footer>
+    <script src="js/JavaScript.js"></script>
+</body>
+
+</html>
